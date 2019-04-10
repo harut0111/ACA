@@ -11,5 +11,3 @@ function findIntgers(start, end) {
     }
 }
 console.log(findIntgers(5,24));
-
-
