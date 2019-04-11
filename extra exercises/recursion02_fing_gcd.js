@@ -3,7 +3,8 @@ common divisor (gcd) of two positive numbers. */
 
 "use strict";
 
-function findGCD(x = 12, y = 6) {
+
+/*function findGCD(x = 12, y = 6) {
     if (x < y) {
         x += y;
         y = x - y;
@@ -15,9 +16,10 @@ function findGCD(x = 12, y = 6) {
     else {
         gcd--;
         return 
+        //NOT FINISHED
     };
 }
-console.log(findGCD(8, 18));
+console.log(findGCD(8, 18));*/
 
 /* //Using for loop
 function findGCD(x = 12, y = 9) {
