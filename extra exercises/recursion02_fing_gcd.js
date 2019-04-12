@@ -3,7 +3,7 @@ common divisor (gcd) of two positive numbers. */
 
 "use strict";
 
-//Usign Recursion
+//Usign Recursion(My solution).
 function findGCD(x = 12, y = 8, i = 0) {
     if (x < y) {
         x += y;
@@ -18,7 +18,18 @@ function findGCD(x = 12, y = 8, i = 0) {
 }
 // console.log(findGCD(12, 18));
 
-/* //Using for loop
+/* //Answer
+var gcd = function(a, b) {
+    if ( ! b) {
+        return a;
+    }
+
+    return gcd(b, a % b);
+};
+// console.log(gcd(2154, 458)); */
+
+
+/* //Using for loop(My solution).
 function findGCD(x = 12, y = 9) {
     // debugger;
     if (x < y) {
