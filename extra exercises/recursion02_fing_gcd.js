@@ -3,23 +3,20 @@ common divisor (gcd) of two positive numbers. */
 
 "use strict";
 
-
-/*function findGCD(x = 12, y = 6) {
+//Usign Recursion
+function findGCD(x = 12, y = 8, i = 0) {
     if (x < y) {
         x += y;
         y = x - y;
         x = x - y;
     }
-    let gcd = y;
-    
-    if(x % gcd === 0 && gcd % y === 0) return y;
+    if(x % y === 0 && (y + i) % y === 0) return y;
     else {
-        gcd--;
-        return 
-        //NOT FINISHED
-    };
+        i++;
+        return findGCD(x, y - 1, i)
+    }
 }
-console.log(findGCD(8, 18));*/
+// console.log(findGCD(12, 18));
 
 /* //Using for loop
 function findGCD(x = 12, y = 9) {
