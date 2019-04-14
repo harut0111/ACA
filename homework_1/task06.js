@@ -29,18 +29,14 @@ function sortAscendig (array) {
                 }
             }
             if(bool) {
-                newarr.push(array.splice(i,1));
+                newarr.push(array.splice(i,1)[0]);
             }
         }
     }
     return newarr;
 }
 
-
-
-
 // console.log(ascending(8, 1, 9));
-
 
 // Test
 // let test = [[45, 26, 78], [-23, -456, 0]];
