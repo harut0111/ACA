@@ -1,7 +1,6 @@
 "use strict";
 
 function checkDigit(number) {
-    debugger;
     if (number === 0) {
         return true;
     }
