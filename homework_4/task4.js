@@ -1,7 +1,7 @@
 "use strict";
 
 function minPosNum(array) {
-    
+    // base case check first element and returns -1 if it's negative else returns the element
     if (array.length === 1) {
         if (array[0] >= 0) { return array[0]; } 
         else { return -1; }
