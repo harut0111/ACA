@@ -1,13 +1,17 @@
 "use strict";
 
 function checkDigit(number) {
+    // reach this case means no even digit met so return true
     if (number === 0) {
         return true;
     }
 
+    // if find even digit return false
     let ld = number % 10;
+    if (ld % 2 === 0) { return false;}
+    // else cut last digit end repeat the same till base case
     number =  parseInt(number / 10);
-    return checkDigit(number) && (ld % 2 !== 0);
+    return checkDigit(number);
 }
 //test
 let val1 = checkDigit(4211133);
