@@ -10,6 +10,6 @@ let arr = [
 ];
 // filter objects that have true status
 let filtArr = arr.filter((item) => item.readStatus === true);
-// sort objects in ascending order by thir percent
+// sort objects in ascending order by their percent
 filtArr.sort((a, b) => a.percent - b.percent);
 console.log(filtArr);
