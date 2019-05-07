@@ -3,7 +3,7 @@
 function flatArr(arr = []) {
     /* base case check if given element contains array then 
     call flatArr() function (repeat cicle) for that array 
-    and returns result, if not returns element (which can be empty array too)*/
+    and returns result, otherwise returns element (which can be empty array too)*/
     if (arr.length <= 1) {
         if (Array.isArray(arr[0])) {
             return flatArr(arr[0]);
@@ -16,7 +16,7 @@ function flatArr(arr = []) {
     let fe = arr.splice(0, 1);
     /* call flatArr() function if first element is array then concatenate
     to rest array result. It first element is not array just concatinate
-    it to the resutl of rest array.
+    it to the result of rest array.
     */
     if (Array.isArray(fe[0])) {
         arr = flatArr(fe).concat(flatArr(arr));
