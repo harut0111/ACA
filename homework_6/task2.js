@@ -1,14 +1,11 @@
 'use strict';
-//????????????????????????????????????????????
-function myF(arr = [], min = 0, max = 10) {
-    let c = 0;
-    for (let i = min; i <= max; i++) {
-        if (arr.indexOf(i) === -1) {
-            c++
-        }
-    }
-    return c;
+
+function myF(arr = []) {
+    // sort array in ascending order
+    arr.sort((a, b) => a - b);
+    // numbers in range
+    let n = arr[arr.length - 1] + 1 - arr[0];
+    return n - arr.length;
 }
 // test
-let arr = [1, 2 ,8, 4, 3, 7, 10, 11, 0, 25];
-console.log(myF(arr, 0, 10));
+console.log(myF([1, 2, 8, 4, 3, 7, 10, 11]));
