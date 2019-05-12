@@ -19,7 +19,6 @@ function buildTree(array) {
 
     // eval statements
     for (const item of arrOfSta) {
-
         eval(item);
     };
     // build array of gen
