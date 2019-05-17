@@ -1,3 +1,0 @@
-ddfvdfbdfb
-defaultStatus
-ConvolverNode;
