@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    background: black;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* container */
+#container {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    color: rgb(0, 255, 0);
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#buttonCont {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    background: none;
+}
+
+.button {
+    display: block;
+    float: left;
+    padding: 10px;
+    color: rgb(51, 255, 0);
+    background: rgb(0, 0, 0);
+    display: block;
+    border: 1px solid rgb(51, 255, 0);
+    border-radius: 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background: rgba(41, 40, 40, 0.493);
+}
+.button:active {
+    background: rgb(51, 167, 60);
+}
