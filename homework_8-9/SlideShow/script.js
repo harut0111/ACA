@@ -4,11 +4,11 @@ let imgSrcArr = ['p/1.jpg', 'p/2.jpg', 'p/3.jpg', 'p/4.jpg', 'p/5.jpg', 'p/6.jpg
 let buttons = document.getElementsByClassName('button');
 let image = document.getElementsByTagName('IMG')[0];
 
-let prev = buttons[0], play = buttons[1], pause = buttons[2], next = buttons[3]
+let prev = buttons[0], play = buttons[1], next = buttons[2]
 
 prev.addEventListener('click', subtract);
 play.addEventListener('click', slide);
-pause.addEventListener('click', slide);
+play.addEventListener('click', () => { play.classList.toggle('active') });
 next.addEventListener('click', add);
 
 let i = 0;
@@ -25,12 +25,10 @@ function subtract() {
 }
 
 let id, bool = true;
-function slide(ev) {
-    if (ev.target.innerHTML === 'Play') {
-        if (bool) {
-            id = setInterval(add, 1000);
-            bool = false;
-        }
+function slide() {
+    if (bool) {
+        id = setInterval(add, 1000);
+        bool = false;
     } else {
         clearInterval(id);
         bool = true;

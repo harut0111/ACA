@@ -46,8 +46,13 @@ img{
     margin: 5px;
     cursor: pointer;
 }
+.active {
+    background: rgb(51, 167, 60);
+}
+
 .button:hover {
-    background: rgba(41, 40, 40, 0.493);
+    border-color: white;
+    color: white;
 }
 .button:active {
     background: rgb(51, 167, 60);
