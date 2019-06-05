@@ -38,10 +38,10 @@ img{
     display: block;
     float: left;
     padding: 10px;
-    color: rgb(51, 255, 0);
+    color: white;
     background: rgb(0, 0, 0);
     display: block;
-    border: 1px solid rgb(51, 255, 0);
+    border: 1px solid white;
     border-radius: 12px;
     margin: 5px;
     cursor: pointer;
@@ -51,9 +51,10 @@ img{
 }
 
 .button:hover {
-    border-color: white;
-    color: white;
+    color: rgb(51, 255, 0);
+    border-color: rgb(51, 255, 0);
 }
+
 .button:active {
     background: rgb(51, 167, 60);
 }
