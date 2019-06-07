@@ -1,5 +1,5 @@
 
-let imgSrcArr = ['p/1.jpg', 'p/2.jpg', 'p/3.jpg', 'p/4.jpg', 'p/5.jpg', 'p/6.jpg', 'p/7.jpg']
+let imgSrcArr = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg', 'img/6.jpg', 'img/7.jpg']
 
 let buttons = document.getElementsByClassName('button');
 let image = document.getElementsByTagName('IMG')[0];
