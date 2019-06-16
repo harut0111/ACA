@@ -36,7 +36,7 @@
         let paragraph = document.getElementById('p1');
 
         let nn, n, promise;
-        
+
         reset();
         function reset() {
             nn = 0;
@@ -49,7 +49,6 @@
         
         function fib() {
             promise = promise.then(function (result) {
-                debugger;
                 nn = n;
                 n = result;
                 paragraph.innerHTML = result;
