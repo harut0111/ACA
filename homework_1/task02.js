@@ -17,4 +17,3 @@ for (let i = 0; i < num1.length; i++) {
 }
 
 console.log(text);
-// document.getElementById("p1").innerHTML = text;

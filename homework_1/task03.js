@@ -18,4 +18,3 @@ for (let i = 0; i < num.length; i++) {
 }
 
 console.log(text);
-// document.getElementById("p1").innerHTML = text;
