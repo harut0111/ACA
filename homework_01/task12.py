@@ -1,3 +1,4 @@
+# task12
 def get_area(name, n1,n2):
     if name == "triangle": return (n1 * n2) / 2
     elif name == "rectangle": return n1 * n2
