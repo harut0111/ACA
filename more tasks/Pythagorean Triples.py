@@ -1,8 +1,8 @@
 import time
 
 def get_Pythagorean_Triples(n):
-
     start_time = time.time()
+    
     res = []
 
     def is_Pyth_triple(list):
