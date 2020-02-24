@@ -27,18 +27,14 @@ function numFreq(array) {
     let l = array.length;
 
     for (let i = 0; i < l; i++) {
-        if (array.indexOf(array[i]) < i) {
-            continue;
-        }
+        if (array.indexOf(array[i]) < i) continue;
         count = 1;
         if (i === l - 1) {
             txt += `${array[i]} => ${count / l}\n`;
             break;
         }
         for (let j = i + 1; j < l; j++) {
-            if (array[i] === array[j]) {
-                count++;
-            }
+            if (array[i] === array[j]) count++;
         }
         txt += `${array[i]} => ${count / l}\n`;
     }

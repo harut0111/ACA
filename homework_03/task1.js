@@ -9,11 +9,8 @@ function printX(size = 8) {
     // debugger;
     for (let i = start; i <= end; i++) {
         for (let j = start; j <= end; j++) {
-            if (Math.abs(i) === Math.abs(j)) {
-                txt += "*";
-            } else {
-                txt += " ";
-            }
+            if (Math.abs(i) === Math.abs(j)) txt += "*";
+            else txt += " ";
         }
         txt += "\n";
     }

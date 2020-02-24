@@ -1,0 +1,2 @@
+def getLongestWord(sentence):
+    pass
