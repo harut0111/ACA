@@ -18,3 +18,4 @@ str2 = "parting your soup is not a miracle, bruce"
 str3 = "aaaaaaa"
 print(getLongestSubstr(str1))
 print(getLongestSubstr(str2))
+print(getLongestSubstr(str3))
