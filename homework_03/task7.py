@@ -1,6 +1,5 @@
 def prodInArr(arrOfarr):
     res = 1
-
     def getMin(arr):
         minNum = min(arr)
         if minNum < 0: return minNum
