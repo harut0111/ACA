@@ -11,5 +11,3 @@ if ((n % 3 === 0) && (n % 10 === 1)) {
 }
 console.log(i);
 console.log(j);
-
-// document.getElementById("p1").innerHTML = `${i} <br> ${j}`;

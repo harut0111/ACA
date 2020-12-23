@@ -28,5 +28,4 @@ for (let i = 0; i < test.length; i++) {
     let c = test[i][2];
     console.log(findRoots(a, b, c));
 }
-// document.getElementById("p1").innerHTML = findRoots(5, -13, 6);
 
