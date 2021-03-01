@@ -1,39 +1,35 @@
 /* if there are duplicated numbers in an array
-then will be difference numbers for 
-indexOf() and lastIndexOf() function. */
+then we can use indexOf() method which always 
+returns first index of given element. Because indexOf()
+method loops all elements its Big(O) notation will be "n^2".
+We can use object dot notation (Big(O) is 1) to have "n
+for finding duplicates */
 
-const retrieveDuplicated = (arr) => (
-  arr.filter((item, index) => arr.indexOf(item) === index)
-)
+// Big(O) is "n^2 "here
+const filterDuplicated = (arr) =>
+  arr.filter((item, index) => arr.indexOf(item) === index);
 
-const retrieveNonDuplicated = (arr) => (
-  arr.filter((item, index) => arr.indexOf(item) !== index)
-)
+// Big(O) is "n" here
+function findDuplicates(a) {
+  let count = {};
+  let dup = [];
+  for (let i = 0; i < a.length; i++) {
+    // return all duplicates
+    // count.hasOwnProperty(a[i]) ? dup.push(a[i]) : (count[a[i]] = null);
+    if (count.hasOwnProperty(a[i]) && !dup.includes(a[i])) {
+      dup.push(a[i]);
+    } else {
+      count[a[i]] = null;
+    }
+  }
+  return dup;
+}
 
-const arr = [1, 2, 2, 4, 5, 8, 9, 2, 23, 7, 5, 6, 6, 1];
-console.log("retrieveNonDuplicated(arr)", retrieveNonDuplicated(arr));
+const arr = [1, 2, 3, 3, 4, 5, 5, 5, 6];
+console.log("filterDuplicated(arr)", filterDuplicated(arr));
+console.log("findDuplicates(arr)", findDuplicates(arr));
 
-// function retrieveDuplicated(arr) {
-//   const uniqueNum = Array.from(new Set(arr));
-//   const result = [];
-//   for (const num of uniqueNum) {
-//     if (arr.indexOf(num) !== arr.lastIndexOf(num)) {
-//       result.push(num);
-//     }
-//   }
-//   return result;
-// }
 
-// function filterNonDuplicated(arr) {
-//   const uniqueNum = Array.from(new Set(arr));
-//   const result = [];
-//   for (const num of uniqueNum) {
-//     if (arr.indexOf(num) === arr.lastIndexOf(num)) {
-//       result.push(num);
-//     }
-//   }
-//   return result;
-// }
 
 // ------------>   another solution using regExp   <-------------
 function nonDuplicated(array) {
