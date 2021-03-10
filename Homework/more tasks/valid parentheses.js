@@ -2,7 +2,7 @@
 
 function isValidParentheses(s) {
   while (
-    s.length !== 0 &&
+    s.length &&
     (s.includes("[]") || s.includes("()") || s.includes("{}"))
   ) {
     s = s.replace("()", "");
