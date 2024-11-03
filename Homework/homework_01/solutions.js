@@ -224,7 +224,12 @@
 
 /* ------------ Task 11 ------------ */
 // const reverseEdgeDigits = (number) => {
-//   // converting to string is easer solution so let's solve keeping number type
+//   // converting to string is easer solution
+//   //   const strOfNum = number.toString();
+//   //   const l = strOfNum.length;
+//   //   if (l === 1) return number;
+//   //   const reversedStr = strOfNum[l - 1] + strOfNum.slice(1, -1) + strOfNum[0];
+//   //   return +reversedStr;
 
 //   const countDigits = (n) => {
 //     let count = 0;
