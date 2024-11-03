@@ -258,3 +258,39 @@
 // for (const input of inputArray) {
 //   console.log('input -> ', input, 'result->', reverseEdgeDigits(input));
 // }
+
+/* ------------ Task 12 ------------ */
+// const computeArea = (shapeName, a, b) => {
+//   if (a <= 0 || b <= 0) return 'Please enter only positives';
+//   return shapeName === 'triangle' ? (a / 2) * b : (shapeArea = a * b);
+// };
+
+// const inputArray = [
+//   ['triangle', 6, 7],
+//   ['rectangle', 8, 5],
+//   ['triangle', 0, 5],
+// ];
+
+// for (const input of inputArray) {
+//   console.log('input -> ', input, 'result->', computeArea(...input));
+// }
+
+/* ------------ Task 13 ------------ */
+// const findDifference = (num) => {
+//   let maxNumber = -Infinity;
+//   let minNumber = Infinity;
+//   while (num) {
+//     const currentDigit = num % 10;
+//     num = Math.floor(num / 10);
+
+//     if (currentDigit > maxNumber) maxNumber = currentDigit;
+//     if (currentDigit < minNumber) minNumber = currentDigit;
+//   }
+
+//   return maxNumber - minNumber;
+// };
+
+// const inputArray = [5, 152, 4593653];
+// for (const input of inputArray) {
+//   console.log('input -> ', input, 'result->', findDifference(input));
+// }
