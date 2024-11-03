@@ -221,3 +221,35 @@
 // for (const input of inputArray) {
 //   console.log('input -> ', input, 'result->', checkDigits(...input));
 // }
+
+/* ------------ Task 11 ------------ */
+// const reverseEdgeDigits = (number) => {
+//   // converting to string is easer solution so let's solve keeping number type
+
+//   const countDigits = (n) => {
+//     let count = 0;
+//     while (n !== 0) {
+//       n = Math.floor(n / 10);
+//       count++;
+//     }
+//     return count;
+//   };
+
+//   const digitsCount = countDigits(number);
+//   // const digitsCount = Math.floor(Math.log10(number)) + 1;
+//   // using log10 is the most efficient way to calculate count of digits in number
+
+//   if (digitsCount === 1) return number;
+
+//   const lastDigit = number % 10;
+//   const powOfTen = Math.pow(10, digitsCount - 1);
+//   const firstDigit = Math.floor(number / powOfTen);
+//   const restPart = (number % powOfTen) - lastDigit;
+//   return lastDigit * powOfTen + restPart + firstDigit;
+// };
+
+// const inputArray = [2, 456, 13, 895796];
+
+// for (const input of inputArray) {
+//   console.log('input -> ', input, 'result->', reverseEdgeDigits(input));
+// }
