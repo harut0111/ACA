@@ -22,16 +22,59 @@
 
 /* ------------ Task 2 ------------ */
 // const fibonacciNumbers = (n) => {
-//   let fibonacciNumber = 0;
-//   for (let i = 0; i <= n; i++) {
-//     fibonacciNumber += i;
+//   if (n === 0) return n;
+//   let a = 0;
+//   let b = 1;
+
+//   for (let i = 0; i < n - 1; i++) {
+//     [a, b] = [b, b + a];
 //   }
-//   return fibonacciNumber;
+//   return b;
 // };
-// for (let i = 0; i <= 10; i++) {
-//   const result = fibonacciNumbers(i);
-//   console.log(i, result);
+// // /* Tests */
+// const inputArray = [0, 2, 10, 20, 25];
+// const outputArray = [0, 1, 55, 6765, 75025];
+
+// for (let i = 0; i < inputArray.length; i++) {
+//   const result = fibonacciNumbers(inputArray[i]);
+//   const test = result === outputArray[i] ? 'Passed' : 'Failed';
+//   console.log(outputArray[i], result, test);
 // }
+
+// const fibonacciNumbersRecursive = (n) => {
+//   if (n <= 1) return n;
+//   const a = fibonacciNumbersRecursive(n - 1);
+//   const b = fibonacciNumbersRecursive(n - 2);
+//   return a + b;
+// };
+
+// console.log('res', fibonacciNumbersRecursive(5));
+
+/* 
+--------- Key difference: (!!!DEBUG TO CHECK VERY DETAILED) ---------
+Memoization Caches Results: With memoization, the function avoids redundant recursive calls
+Each time a new Fibonacci number is calculated, it's stored in the memo object.
+Reduces Recursive Calls: If a value has already been computed (e.g., fibonacciNumbers(3)), it directly returns 
+the stored result from memo instead of making further recursive calls. Here is the code (if (n in memo) return memo[n];)
+*/
+
+// const fibonacciNumbersRecursiveMemory = (n, memo = {}) => {
+//   if (n in memo) return memo[n];
+//   if (n <= 1) return n;
+//   const a = fibonacciNumbersRecursiveMemory(n - 1, memo);
+//   const b = fibonacciNumbersRecursiveMemory(n - 2, memo);
+//   memo[n] = a + b;
+//   return memo[n];
+// };
+
+// console.log('res', fibonacciNumbersRecursiveMemory(5));
+
+// const fibSeq = [];
+// for (let i = 0; i < 25; i++) {
+//   const res = fibonacciNumbersRecursiveMemory(i);
+//   fibSeq.push(res);
+// }
+// console.log('fibSeq', fibSeq);
 
 /* ------------ Task 3 ------------ */
 // const fibonacciSeries = (n) => {
