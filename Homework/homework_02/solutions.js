@@ -52,9 +52,9 @@
 
 /* 
 --------- Key difference: (!!!DEBUG TO CHECK VERY DETAILED) ---------
-Memoization Caches Results: With memoization, the function avoids redundant recursive calls
-Each time a new Fibonacci number is calculated, it's stored in the memo object.
-Reduces Recursive Calls: If a value has already been computed (e.g., fibonacciNumbers(3)), it directly returns 
+Memoization Caches Results: With memoization, the function avoids redundant recursive calls which 
+significantly improves performance from O(2ⁿ) to O(n). Each time a new Fibonacci number is calculated, it's stored in 
+the memo object. Reduces Recursive Calls: If a value has already been computed (e.g., fibonacciNumbers(3)), it directly returns 
 the stored result from memo instead of making further recursive calls. Here is the code (if (n in memo) return memo[n];)
 */
 
