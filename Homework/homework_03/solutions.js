@@ -1,7 +1,7 @@
 /* ------------------------ Homework 3 (review) --------------------*/
 /*  4 Nov 2024   */
 
-/* ------------ Task 1 ------------ */
+/* ------------ Problem 1 ------------ */
 // const frequencyUniqueNumbers = (inputArray) => {
 //   const result = {};
 //   const countOfNumbers = inputArray.length;
@@ -40,7 +40,7 @@
 //   }
 // });
 
-/* ------------ Task 2 ------------ */
+/* ------------ Problem 2 ------------ */
 // const countOfElements = (inputArray) => {
 //   let stringsCount = 0;
 //   let numbersCount = 0;
@@ -76,7 +76,7 @@
 //   }
 // });
 
-/* ------------ Task 4 ------------ */
+/* ------------ Problem 4 ------------ */
 
 // const findLongestWord = (inputString) => {
 //   const words = inputString.split(/[ ,-]+/);
@@ -112,7 +112,7 @@
 //   }
 // });
 
-/* ------------ Task 5 ------------ */
+/* ------------ Problem 5 ------------ */
 
 // const findLongestUniqueSubstring = (inputString = '') => {
 //   let longestSubstring = '';
@@ -154,7 +154,7 @@
 //   }
 // });
 
-/* ------------ Task 6 ------------ */
+/* ------------ Problem 6 ------------ */
 
 // const flipSubstrings = (inputString = '') => {
 //   let result = '';
@@ -198,7 +198,7 @@
 //   }
 // });
 
-/* ------------ Task 7 ------------ */
+/* ------------ Problem 7 ------------ */
 
 // const findProductOfArraysMax = (inputArray = [[]]) => {
 //   const anyNoNAray = inputArray.some((array) => Array.isArray(array));
@@ -252,7 +252,7 @@
 //   }
 // });
 
-/* ------------ Task 8 ------------ */
+/* ------------ Problem 8 ------------ */
 
 // const getAllCombinations = (inputArray = []) => {
 //   //  combinations with O(n²) complexity (My solution)

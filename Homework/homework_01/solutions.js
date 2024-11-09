@@ -1,7 +1,7 @@
 /* ------------------------ Homework 1 (review) --------------------*/
 /*  1 Nov 2024   */
 
-/* ------------ Task 1 ------------ */
+/* ------------ Problem 1 ------------ */
 // const input = (number) => {
 //   if (number % 2 === 0) {
 //     return 'even';
@@ -12,7 +12,7 @@
 // const res = determineNumbers(70);
 // console.log('res', res);
 
-/* ------------ Task 2 ------------ */
+/* ------------ Problem 2 ------------ */
 // const division = (n1, n2) => {
 //   if (n1 % n2 === 0 || n2 % n1 === 0) return 1;
 //   return 0;
@@ -28,7 +28,7 @@
 //   console.log('input', input, division(input[0], input[1]));
 // }
 
-/* ------------ Task 3 ------------ */
+/* ------------ Problem 3 ------------ */
 // const concatNumbers = (positiveNumber) => {
 //   return (
 //     3 +
@@ -49,7 +49,7 @@
 //   console.log('input', input, concatNumbers(input));
 // }
 
-/* ------------ Task 4 ------------ */
+/* ------------ Problem 4 ------------ */
 // const swapNumbers = (number) => {
 //   const lastDigit = number % 10;
 
@@ -65,7 +65,7 @@
 //   console.log('input', input, swapNumbers(input));
 // }
 
-/* ------------ Task 5 ------------ */
+/* ------------ Problem 5 ------------ */
 // const getAverage = (n1, n2, n3, n4, n5) => {
 //   const average = (n1 + n2 + n3 + n4 + n5) / 5;
 //   return average;
@@ -80,7 +80,7 @@
 //   console.log('input', input, getAverage(...input));
 // }
 
-/* ------------ Task 6 ------------ */
+/* ------------ Problem 6 ------------ */
 // const sortAscOrder = (...args) => {
 //   const numbersArray = [...args];
 //   let continueNextIteration = true;
@@ -114,7 +114,7 @@
 //   console.log('input -> ', input, 'result->', sortAscOrder(...input));
 // }
 
-/* ------------ Task 7 ------------ */
+/* ------------ Problem 7 ------------ */
 // const findSign = (...args) => {
 //   const inputNumbersArray = args;
 //   if (inputNumbersArray.includes(0)) return 'unsigned';
@@ -143,7 +143,7 @@
 //   console.log('input -> ', input, 'result->', findSign(...input));
 // }
 
-/* ------------ Task 8 ------------ */
+/* ------------ Problem 8 ------------ */
 // const solveQuadraticEquations = (a, b, c) => {
 //   if (a === 0) {
 //     return 'Enter valid constants';
@@ -184,7 +184,7 @@
 //   );
 // }
 
-/* ------------ Task 9 ------------ */
+/* ------------ Problem 9 ------------ */
 // const rewriteCode = (n) => {
 //   let i = 0;
 //   let j = 0;
@@ -194,7 +194,7 @@
 //   return [i, j];
 // };
 
-/* ------------ Task 10 ------------ */
+/* ------------ Problem 10 ------------ */
 // const checkDigits = (digit, number) => {
 //   // Solution 1 transfer to String and solve
 //   //   const stringOfNumber = number.toString();
@@ -222,7 +222,7 @@
 //   console.log('input -> ', input, 'result->', checkDigits(...input));
 // }
 
-/* ------------ Task 11 ------------ */
+/* ------------ Problem 11 ------------ */
 // const reverseEdgeDigits = (number) => {
 //   // converting to string is easer solution
 //   //   const strOfNum = number.toString();
@@ -259,7 +259,7 @@
 //   console.log('input -> ', input, 'result->', reverseEdgeDigits(input));
 // }
 
-/* ------------ Task 12 ------------ */
+/* ------------ Problem 12 ------------ */
 // const computeArea = (shapeName, a, b) => {
 //   if (a <= 0 || b <= 0) return 'Please enter only positives';
 //   return shapeName === 'triangle' ? (a / 2) * b : (shapeArea = a * b);
@@ -275,7 +275,7 @@
 //   console.log('input -> ', input, 'result->', computeArea(...input));
 // }
 
-/* ------------ Task 13 ------------ */
+/* ------------ Problem 13 ------------ */
 // const findDifference = (num) => {
 //   let maxNumber = -Infinity;
 //   let minNumber = Infinity;

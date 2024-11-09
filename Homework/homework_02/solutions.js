@@ -1,7 +1,7 @@
 /* ------------------------ Homework 2 (review) --------------------*/
 /*  4 Nov 2024   */
 
-/* ------------ Task 1 ------------ */
+/* ------------ Problem 1 ------------ */
 // const detectPrimeNumber = (n) => {
 //   if (n < 5) {
 //     return [2, 3].includes(n) ? 'yes' : 'no';
@@ -20,7 +20,7 @@
 //   console.log(i, result);
 // }
 
-/* ------------ Task 2 ------------ */
+/* ------------ Problem 2 ------------ */
 // const fibonacciNumbers = (n) => {
 //   if (n === 0) return n;
 //   let a = 0;
@@ -76,7 +76,7 @@ the stored result from memo instead of making further recursive calls. Here is t
 // }
 // console.log('fibSeq', fibSeq);
 
-/* ------------ Task 3 ------------ */
+/* ------------ Problem 3 ------------ */
 // const fibonacciSeries = (n) => {
 //   const fibonacciSequences = [0, 1];
 //   for (let i = 2; i <= n; i++) {
@@ -92,7 +92,7 @@ the stored result from memo instead of making further recursive calls. Here is t
 //   console.log('input ->', input, 'result ->', fibonacciSeries(input));
 // }
 
-/* ------------ Task 3 ------------ */
+/* ------------ Problem 3 ------------ */
 // const fibonacciSeries = (number) => {
 //   if (number === 0) return 'Cannot calculate';
 
@@ -139,7 +139,7 @@ the stored result from memo instead of making further recursive calls. Here is t
 //   console.log(inputArray[i], result, test);
 // }
 
-/* ------------ Task 4 ------------ */
+/* ------------ Problem 4 ------------ */
 // const findSecondMax = (numbersArray = []) => {
 //   const maxTwoNumbers = [-Infinity, numbersArray[0]];
 
@@ -172,7 +172,7 @@ the stored result from memo instead of making further recursive calls. Here is t
 //   console.log(outputArray[i], result, test);
 // }
 
-/* ------------ Task 4 ------------ */
+/* ------------ Problem 4 ------------ */
 // const findSecondMax = (arr = [], padAmount, repeat) => {
 //   const leftPad = arr.slice(0, padAmount);
 //   const rightPad = arr.slice(-padAmount);
