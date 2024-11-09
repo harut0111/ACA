@@ -252,7 +252,7 @@
 //   }
 // });
 
-/* ------------ Task 7 ------------ */
+/* ------------ Task 8 ------------ */
 
 // const getAllCombinations = (inputArray = []) => {
 //   //  combinations with O(n²) complexity (My solution)
@@ -331,3 +331,32 @@
 //     console.log('Received:', result, '\n');
 //   }
 // });
+
+// function subsetsOfLengthRecursive(nums, k) {
+//   const result = [];
+
+//   // Check backtracking algorithm https://www.geeksforgeeks.org/backtracking-algorithms/
+//   function backtrack(start, subset) {
+//     // If the subset is of the desired length, add it to the result
+//     // Remove this condition to get all subsets
+//     if (subset.length === k) {
+//       result.push([...subset]);
+//       return;
+//     }
+
+//     // Loop through the array to build subsets
+//     for (let i = start; i < nums.length; i++) {
+//       subset.push(nums[i]); // Include the current element
+//       backtrack(i + 1, subset); // Move to the next element
+//       subset.pop(); // Exclude the last element to backtrack
+//     }
+//   }
+
+//   backtrack(0, []);
+//   return result;
+// }
+
+// // Example
+// const array = [5, 9, 23, 0, -2, -1];
+// const k = 3;
+// console.log(subsetsOfLengthRecursive(array, k));
