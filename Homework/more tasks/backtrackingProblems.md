@@ -1,7 +1,3 @@
-Certainly! Here's the converted content in Markdown format.
-
----
-
 # Permutations, Combinations and more
 
 Check: [GeeksforGeeks - Backtracking Algorithms](https://www.geeksforgeeks.org/backtracking-algorithms/)
