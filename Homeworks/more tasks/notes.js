@@ -10,3 +10,8 @@
    const arrOfDigits = Array.from(currentNum.toString(), (digit) => +digit);
    e.g., 12345 -> ['1', '2', '3', '4', '5'] -> [1, 2, 3, 4, 5]
 */
+
+/* -------> if you need to check any condition on iterable things 
+
+   arrOfDigits.every((digit) => digit % 2 === 0)
+*/
