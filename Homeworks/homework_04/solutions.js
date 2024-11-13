@@ -127,3 +127,80 @@ priority, the string-based solution can be a reasonable choice. */
 //     console.log('Received:', result, '\n');
 //   }
 // });
+
+/* ------------ Problem 3 ------------ */
+// const checkAllOddDigitsR = (number) => {
+//   if (number <= 0) return true;
+//   const lastDigit = number % 10;
+//   if (lastDigit % 2 === 0) return false;
+//   return checkAllOddDigitsR(Math.floor(number / 10));
+// };
+
+// /* Test */
+// const testCases = [
+//   {
+//     input: 4211133,
+//     expected: false,
+//   },
+//   {
+//     input: [7791],
+//     expected: true,
+//   },
+//   {
+//     input: [5],
+//     expected: true,
+//   },
+// ];
+
+// testCases.forEach((testCase, index) => {
+//   const result = checkAllOddDigitsR(testCase.input);
+//   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
+//   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
+//   if (!passed) {
+//     console.log('Expected:', testCase.expected);
+//     console.log('Received:', result, '\n');
+//   }
+// });
+
+/* ------------ Problem 5 ------------ */
+
+// const findMinPositiveR = (array = [], index = 0, minNum = Infinity) => {
+//   // base case
+//   if (index === array.length) {
+//     return minNum === Infinity ? -1 : minNum;
+//   }
+
+//   // recursive case
+//   const currentNum = array[index];
+//   if (currentNum >= 0 && currentNum < minNum) {
+//     minNum = currentNum;
+//   }
+
+//   return findMinPositiveR(array, index + 1, minNum);
+// };
+
+// /* Test */
+// const testCases = [
+//   {
+//     input: [56, -9, 87, -23, 0, -105, 55, 1],
+//     expected: 0,
+//   },
+//   {
+//     input: [45, -9, 15, 5, -78],
+//     expected: 5,
+//   },
+//   {
+//     input: [-5, -9, -111, -1000, -7],
+//     expected: -1,
+//   },
+// ];
+
+// testCases.forEach((testCase, index) => {
+//   const result = findMinPositiveR(testCase.input);
+//   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
+//   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
+//   if (!passed) {
+//     console.log('Expected:', testCase.expected);
+//     console.log('Received:', result, '\n');
+//   }
+// });
