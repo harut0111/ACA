@@ -162,7 +162,7 @@ priority, the string-based solution can be a reasonable choice. */
 //   }
 // });
 
-/* ------------ Problem 5 ------------ */
+/* ------------ Problem 4 ------------ */
 
 // const findMinPositiveR = (array = [], index = 0, minNum = Infinity) => {
 //   // base case
@@ -197,6 +197,37 @@ priority, the string-based solution can be a reasonable choice. */
 
 // testCases.forEach((testCase, index) => {
 //   const result = findMinPositiveR(testCase.input);
+//   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
+//   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
+//   if (!passed) {
+//     console.log('Expected:', testCase.expected);
+//     console.log('Received:', result, '\n');
+//   }
+// });
+
+/* ------------ Problem 5 ------------ */
+
+// const findSortingIndex = (array = []) => {
+//   for (let i = 1; i < array.length; i++) {
+//     if (array[i] < array[i - 1]) return i;
+//   }
+//   return -1;
+// };
+
+// /* Test */
+// const testCases = [
+//   {
+//     input: [2, 12, 15, 48, 64],
+//     expected: -1,
+//   },
+//   {
+//     input: [-9, -4, -4, 3, 12, 4, 5],
+//     expected: 5,
+//   },
+// ];
+
+// testCases.forEach((testCase, index) => {
+//   const result = findSortingIndex(testCase.input);
 //   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
 //   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
 //   if (!passed) {
