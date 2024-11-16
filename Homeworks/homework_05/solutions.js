@@ -2,6 +2,10 @@
 /*  14 Nov 2024   */
 
 /* ------------ Problem 1 ------------ */
+/* Given an array. Write a recursive function that removes the first 
+element and returns the given array. (without using arr.unshift(),assign 
+second element to first, third element to second...) */
+
 // const unshiftArrayR = (array, i = 1) => {
 //   // base case
 //   if (i >= array.length) return [];
@@ -38,6 +42,9 @@
 // });
 
 /* ------------ Problem 2 ------------ */
+/*  	Given an array of nested arrays. Write a recursive function that 
+flattens it. (Hint create function that concats arrays). */
+
 // const flatArrayR = (array, i = 0) => {
 //   // base case
 //   if (i >= array.length) return [];
@@ -76,6 +83,10 @@
 // });
 
 /* ------------ Problem 3 ------------ */
+/* Given a number. Write a function that calculates its sum of the digits and if 
+that sum has more than 1 digit find the sum of digits of that number. Repeat 
+that process if needed and return the flippedObj. */
+
 // const findDigitsSumR = (number) => {
 //   const arrayOfNumbers = Array.from(number.toString(), (charOfNumber) =>
 //     parseInt(charOfNumber)
@@ -116,6 +127,9 @@
 // });
 
 /* ------------ Problem 4 ------------ */
+/* Given an array and a number N.  Write a recursive function that rotates an 
+array N places to the left. (Hint: to add element to the beginning use arr.unshift()) */
+
 // const shiftArrayR = (array, shift) => {
 //   // base case
 //   if (shift === 0) return array;
@@ -147,6 +161,77 @@
 
 // testCases.forEach((testCase, index) => {
 //   const result = shiftArrayR(...testCase.input);
+//   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
+//   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
+//   if (!passed) {
+//     console.log('Expected:', testCase.expected);
+//     console.log('Received:', result, '\n');
+//   }
+// });
+
+/* ------------ Problem 5 ------------ */
+/* Given an obj. Invert it (keys become values and values become keys).
+ If there is more than key for that given value create an array. */
+
+// const flipKeysAndValues = (obj = {}) => {
+//   const flippedObj = {};
+
+//   for (const key in obj) {
+//     // check if flippedObj already have prop with current value
+//     const currentValue = obj[key];
+//     if (Object.hasOwn(flippedObj, currentValue)) {
+//       // check if value is array
+//       Array.isArray(flippedObj[currentValue])
+//         ? (flippedObj[currentValue] = [...flippedObj[currentValue], key])
+//         : (flippedObj[currentValue] = [flippedObj[currentValue], key]);
+//       continue;
+//     }
+
+//     // standard flip
+//     flippedObj[currentValue] = key;
+//   }
+//   return flippedObj;
+// };
+
+// const flipKeysAndValuesR = (obj = {}, flippedObj = {}, i = 0) => {
+//   const keys = Object.keys(obj);
+//   // base case
+//   if (i >= keys.length) return flippedObj;
+
+//   const key = keys[i];
+//   const currentValue = obj[key];
+
+//   if (Object.hasOwn(flippedObj, currentValue)) {
+//     // check if value is array
+//     Array.isArray(flippedObj[currentValue])
+//       ? (flippedObj[currentValue] = [...flippedObj[currentValue], key])
+//       : (flippedObj[currentValue] = [flippedObj[currentValue], key]);
+//     return flipKeysAndValuesR(obj, flippedObj, i + 1);
+//   }
+
+//   // standard flip
+//   flippedObj[currentValue] = key;
+//   return flipKeysAndValuesR(obj, flippedObj, i + 1);
+// };
+
+// /* Test */
+// const testCases = [
+//   {
+//     input: { a: '1', b: '2' },
+//     expected: { 1: 'a', 2: 'b' },
+//   },
+//   {
+//     input: { a: '1', b: '2', c: '2' },
+//     expected: { 1: 'a', 2: ['b', 'c'] },
+//   },
+//   {
+//     input: { a: '1', b: '2', c: '2', d: '2' },
+//     expected: { 1: 'a', 2: ['b', 'c', 'd'] },
+//   },
+// ];
+
+// testCases.forEach((testCase, index) => {
+//   const result = flipKeysAndValues(testCase.input);
 //   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
 //   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
 //   if (!passed) {
