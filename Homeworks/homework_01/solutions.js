@@ -2,6 +2,8 @@
 /*  1 Nov 2024   */
 
 /* ------------ Problem 1 ------------ */
+/* Given a number. Print “odd” if the number is odd and “even” if it’s even.*/
+
 // const input = (number) => {
 //   if (number % 2 === 0) {
 //     return 'even';
@@ -13,6 +15,9 @@
 // console.log('res', res);
 
 /* ------------ Problem 2 ------------ */
+/* Given two numbers print 1 if one of them is divisible by 
+the other one, otherwise print 0. */
+
 // const division = (n1, n2) => {
 //   if (n1 % n2 === 0 || n2 % n1 === 0) return 1;
 //   return 0;
@@ -29,6 +34,9 @@
 // }
 
 /* ------------ Problem 3 ------------ */
+/* Given number n (positive integer). Print the value of
+ n + nn + nnn(not multiplication).*/
+
 // const concatNumbers = (positiveNumber) => {
 //   return (
 //     3 +
@@ -50,6 +58,10 @@
 // }
 
 /* ------------ Problem 4 ------------ */
+/* Given a positive integer. Bring the last digit of the number
+ to the beginning. Print the new number. If the last digit of 
+ the inserted number is 0, number remains the same. */
+
 // const swapNumbers = (number) => {
 //   const lastDigit = number % 10;
 
@@ -66,6 +78,9 @@
 // }
 
 /* ------------ Problem 5 ------------ */
+/* Given five numbers as input. Calculate and print the average of 
+the numbers(without using arrays). */
+
 // const getAverage = (n1, n2, n3, n4, n5) => {
 //   const average = (n1 + n2 + n3 + n4 + n5) / 5;
 //   return average;
@@ -81,6 +96,8 @@
 // }
 
 /* ------------ Problem 6 ------------ */
+/* Given three numbers. Sort them by the ascending order. */
+
 // const sortAscOrder = (...args) => {
 //   const numbersArray = [...args];
 //   let continueNextIteration = true;
@@ -115,6 +132,9 @@
 // }
 
 /* ------------ Problem 7 ------------ */
+/* Find the sign of product of three numbers without multiplication
+ operator. Display the specified sign. */
+
 // const findSign = (...args) => {
 //   const inputNumbersArray = args;
 //   if (inputNumbersArray.includes(0)) return 'unsigned';
@@ -144,6 +164,10 @@
 // }
 
 /* ------------ Problem 8 ------------ */
+/* Input three numbers a, b, c respectively, where a is a non zero number
+ and write a program to solve quadratic equations: ax2+ bx+c=0. 
+ (Hint: use Math.pow or Math.sqrt).*/
+
 // const solveQuadraticEquations = (a, b, c) => {
 //   if (a === 0) {
 //     return 'Enter valid constants';
@@ -185,6 +209,9 @@
 // }
 
 /* ------------ Problem 9 ------------ */
+/* Given the following code rewrite it using only two if operators. 
+(Hint: use logical operators). */
+
 // const rewriteCode = (n) => {
 //   let i = 0;
 //   let j = 0;
@@ -195,6 +222,9 @@
 // };
 
 /* ------------ Problem 10 ------------ */
+/* Insert a digit and a number. Check whether the
+ digits contains in the number or not.*/
+
 // const checkDigits = (digit, number) => {
 //   // Solution 1 transfer to String and solve
 //   //   const stringOfNumber = number.toString();
@@ -223,6 +253,9 @@
 // }
 
 /* ------------ Problem 11 ------------ */
+/* Enter a number. Reverse its first and 
+last digits. Print the new number. */
+
 // const reverseEdgeDigits = (number) => {
 //   // converting to string is easer solution
 //   //   const strOfNum = number.toString();
@@ -260,6 +293,11 @@
 // }
 
 /* ------------ Problem 12 ------------ */
+/* Write a program which will compute the area of a rectangular or a 
+triangle after prompting the user to type the name of the figure name. 
+Also check that entered numbers are positive. 
+For the triangle entered numbers are height and and base. */
+
 // const computeArea = (shapeName, a, b) => {
 //   if (a <= 0 || b <= 0) return 'Please enter only positives';
 //   return shapeName === 'triangle' ? (a / 2) * b : (shapeArea = a * b);
@@ -276,6 +314,9 @@
 // }
 
 /* ------------ Problem 13 ------------ */
+/* (***) Enter a number. Find the difference between 
+its biggest and smallest digits. */
+
 // const findDifference = (num) => {
 //   let maxNumber = -Infinity;
 //   let minNumber = Infinity;
