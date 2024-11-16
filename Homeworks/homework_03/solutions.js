@@ -36,7 +36,7 @@
 //   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
 //   if (!passed) {
 //     console.log('Expected:', testCase.expected);
-//     console.log('Received:', result);
+//     console.log('Received:', result, '\n');
 //   }
 // });
 
@@ -72,7 +72,7 @@
 //   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
 //   if (!passed) {
 //     console.log('Expected:', testCase.expected);
-//     console.log('Received:', result);
+//     console.log('Received:', result, '\n');
 //   }
 // });
 
@@ -108,7 +108,7 @@
 //   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
 //   if (!passed) {
 //     console.log('Expected:', testCase.expected);
-//     console.log('Received:', result);
+//     console.log('Received:', result, '\n');
 //   }
 // });
 
