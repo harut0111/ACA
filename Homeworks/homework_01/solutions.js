@@ -4,14 +4,14 @@
 /* ------------ Problem 1 ------------ */
 /* Given a number. Print “odd” if the number is odd and “even” if it’s even.*/
 
-// const input = (number) => {
+// const isEvenOrOdd = (number) => {
 //   if (number % 2 === 0) {
 //     return 'even';
 //   }
 //   return 'odd';
 // };
 
-// const res = determineNumbers(70);
+// const res = isEvenOrOdd(70);
 // console.log('res', res);
 
 /* ------------ Problem 2 ------------ */
@@ -293,11 +293,6 @@ last digits. Print the new number. */
 // }
 
 /* ------------ Problem 12 ------------ */
-/* Write a program which will compute the area of a rectangular or a 
-triangle after prompting the user to type the name of the figure name. 
-Also check that entered numbers are positive. 
-For the triangle entered numbers are height and and base. */
-
 // const computeArea = (shapeName, a, b) => {
 //   if (a <= 0 || b <= 0) return 'Please enter only positives';
 //   return shapeName === 'triangle' ? (a / 2) * b : (shapeArea = a * b);
@@ -314,9 +309,6 @@ For the triangle entered numbers are height and and base. */
 // }
 
 /* ------------ Problem 13 ------------ */
-/* (***) Enter a number. Find the difference between 
-its biggest and smallest digits. */
-
 // const findDifference = (num) => {
 //   let maxNumber = -Infinity;
 //   let minNumber = Infinity;
