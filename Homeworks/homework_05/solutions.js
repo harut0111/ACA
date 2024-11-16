@@ -239,3 +239,43 @@ array N places to the left. (Hint: to add element to the beginning use arr.unshi
 //     console.log('Received:', result, '\n');
 //   }
 // });
+
+/* ------------ Problem 5 ------------ */
+/* Given the list of the readers:;
+Output the books sorted by the percent in descending order which readStatus is true.
+*/
+
+// const reorderArrayItems = (arr = []) =>
+//   arr.filter((obj) => (obj.readStatus = true)).sort();
+
+// /* Test */
+// const testCases = [
+//   {
+//     input: [
+//       { book: 'Catcher in the Rye', readStatus: true, percent: 40 },
+//       { book: 'Animal Farm', readStatus: true, percent: 20 },
+//       { book: 'Solaris', readStatus: false, percent: 90 },
+//       { book: 'The Fall', readStatus: true, percent: 50 },
+//       { book: 'White Nights', readStatus: false, percent: 60 },
+//       { book: 'After Dark', readStatus: true, percent: 70 },
+//     ],
+//     expected: [
+//       { book: 'Catcher in the Rye', readStatus: true, percent: 40 },
+//       { book: 'Animal Farm', readStatus: true, percent: 20 },
+//       { book: 'Solaris', readStatus: true, percent: 90 },
+//       { book: 'The Fall', readStatus: true, percent: 50 },
+//       { book: 'White Nights', readStatus: true, percent: 60 },
+//       { book: 'After Dark', readStatus: true, percent: 70 },
+//     ],
+//   },
+// ];
+
+// testCases.forEach((testCase, index) => {
+//   const result = reorderArrayItems(testCase.input);
+//   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
+//   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
+//   if (!passed) {
+//     console.log('Expected:', testCase.expected);
+//     console.log('Received:', result, '\n');
+//   }
+// });
