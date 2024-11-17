@@ -15,3 +15,8 @@
 
    arrOfDigits.every((digit) => digit % 2 === 0)
 */
+
+/* -------> for sorting alway make sure have callback function
+
+   [8, 15, 3, 12].sort() -> [12, 15, 3, 8] (this is incorrect)
+*/
