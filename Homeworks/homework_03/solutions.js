@@ -335,7 +335,7 @@
 // function subsetsOfLengthRecursive(nums, k) {
 //   const result = [];
 
-//   // Check backtracking algorithm https://www.geeksforgeeks.org/backtracking-algorithms/
+//   // Check backtracking nots https://github.com/harut0111/dev-notes/blob/4c2846ad6032ace624b83e3776bec970c60d6e1b/Problem%20Solutions%20Nots/backtrackingProblems.md
 //   function backtrack(start, subset) {
 //     // If the subset is of the desired length, add it to the result
 //     // Remove this condition to get all subsets
