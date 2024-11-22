@@ -80,6 +80,50 @@
 // });
 
 /* -------------------------------------------------------------------------------------- */
+/*  QUICK SORT 
+    https://www.geeksforgeeks.org/quick-sort-algorithm/
+*/
+// function quickSort(arr) {
+//   // Base case: If the array has 1 or 0 elements, it's already sorted
+//   if (arr.length <= 1) return arr;
+
+//   // Step 1: Choose the last element as the pivot
+//   const pivot = arr[arr.length - 1];
+//   const left = [];
+//   const right = [];
+
+//   // Step 2: Partition the array into left (smaller) and right (greater)
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     if (arr[i] < pivot) {
+//       left.push(arr[i]); // Elements smaller than pivot go to 'left'
+//     } else {
+//       right.push(arr[i]); // Elements larger or equal go to 'right'
+//     }
+//   }
+
+//   // Step 3: Recursively sort left and right, then combine with the pivot
+//   return [...quickSort(left), pivot, ...quickSort(right)];
+// }
+
+// /* Test */
+// const testCases = [
+//   {
+//     input: [6, 8, 4, 12, 78, -55],
+//     expected: [-55, 4, 6, 8, 12, 78],
+//   },
+// ];
+
+// testCases.forEach((testCase, index) => {
+//   const result = quickSort(testCase.input);
+//   const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
+//   console.log(`Test case ${index + 1}: ${passed ? 'Passed' : 'Failed'}`);
+//   if (!passed) {
+//     console.log('Expected:', testCase.expected);
+//     console.log('Received:', result, '\n');
+//   }
+// });
+
+/* -------------------------------------------------------------------------------------- */
 /*  MERGE SORT 
     https://www.geeksforgeeks.org/merge-sort/
 */
